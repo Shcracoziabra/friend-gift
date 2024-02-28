@@ -354,6 +354,7 @@ body div, body span, body p, body button {
     }
     .lights {
         height: 80px;
+        margin-bottom: 50px;
     }
 
     .light {
