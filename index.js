@@ -85,8 +85,8 @@ window.addEventListener('DOMContentLoaded', ()=> {
     function moveMagicLight(e){
         const color = e.target.getAttribute('data-light');
             e.target.classList.add('light_increase');
+            e.target.removeEventListener('click', moveMagicLight);
             setTimeout(()=> {
-                e.target.removeEventListener('click', moveMagicLight);
                 e.target.remove();
                 const lightedLetters = document.querySelectorAll(`.sentence-letter[data-color="${color}"]`);
                 lightedLetters.forEach(item => {
