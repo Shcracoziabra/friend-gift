@@ -12,7 +12,7 @@ body div, body span, body p, body button {
     display: none;
 }
 
-@media screen and (orientation: portrait) {
+@media screen and (orientation: portrait), screen and (pointer) {
 
     body {
         min-width: 375px;
